@@ -203,4 +203,185 @@ body {
   font-size: 50px;
   position: absolute;
   top: 130px;
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #8b48bf;
+  --main-dark-color: #1e1e26;
+  --main-shine-color: #ffffff;
+  --main-dark-fonts-color: #242e53;
+  --main-fonts-color: #323851;
+  --main-grey-color: #b9b9c1;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
+
+header {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 8rem;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+.navbar-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 107px;
+  height: 25px;
+}
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+.navbar-header,
+a {
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--main-dark-fonts-color);
+}
+.navbar-header li,
+a:hover {
+  color: var(--main-grey-color);
+}
+
+.button-contact {
+  background-color: var(--main-color);
+  color: var(--main-shine-color);
+  width: 134px;
+  height: 44px;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 13.18px;
+  box-shadow: 0px 7px 5px 0px rgba(204, 204, 204, 0.75);
+  -webkit-box-shadow: 0px 7px 5px 0px rgba(204, 204, 204, 0.75);
+  -moz-box-shadow: 0px 7px 5px 0px rgba(204, 204, 204, 0.75);
+}
+.button-contact:hover{
+  opacity: 0.5;
+}
+.mobile-menu {
+  display: none;
+}
+
+.goforit-section {
+  width: 1440px;
+  height: 224px;
+  background-color: var(--main-color);
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.goforit-section p {
+  width: 500px;
+  font-size: 40px;
+  color:var(--main-shine-color);
+}
+
+ .button-goit {
+  background-color: var(--main-shine-color);
+  color: var(--main-color);
+  width: 134px;
+  height: 44px;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 13.18px;
+}
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 247px;
+  background-color: var(--main-dark-color);
+
+}
+
+.redes{
+  display: flex;
+  flex-direction: column;
+}
+.logo-blanco{
+  color: var(--main-shine-color);
+}
+.icons-redes {
+  list-style: none;
+  text-decoration: none;
+  color: var(--main-shine-color); 
+}
+
+.footer-menu{
+  display: flex;
+  width: 340px;
+  height: 141px;
+}
+.footer-menu ul {
+  list-style: none;
+  padding: 10px; /* Elimina el espacio entre los elementos de la lista */
+}
+.footer-menu ul li {
+  margin: 10px; /* Elimina el espacio entre los elementos de la lista */
+}
+.footer-menu ul li a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: white; /* Establece el color del texto en blanco */
+}
+.input{
+  background-color: var(--main-shine-color);
+  color: var(--main-grey-color);
+  width: 201px;
+  height: 44px;
+  border: none;
+  border-radius: 50px;
+  text-align: left;
+  font-size: 13.18px;
+}
+.button-go{
+  background-color: var(--main-color);
+  color: var(--main-shine-color);
+  width: 63px;
+  height: 42px;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 13.18px;
+}
+.button-go:hover{
+  opacity: 0.5;
+}
+.copyright{
+  color: var(--main-grey-color);
+  text-align: right;
+  font-size: 12.5px;
+}
+@media (max-width: 468px) {
+  header {
+    justify-content: space-between;
+  }
+  .header-navbar,
+  .button-hide {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
 }
