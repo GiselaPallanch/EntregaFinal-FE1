@@ -81,8 +81,12 @@ header {
   margin-top: 100px;
 }
 .img-padel {
-  width: 540px;
-  height: 461.07px;
+    animation: img-padel 3s infinite alternate;
+}
+@keyframes img-padel {
+    to{
+        transform: scale(70%);
+    }
 }
 .texto-padel {
   width: 450px;
@@ -116,6 +120,11 @@ header {
   color: #ffffff;
   margin-inline: auto;
   border: none;
+}
+.button-padel:hover{
+    opacity: 0.5;
+    transition-duration: 1s;
+    cursor: pointer;
 }
 .container-pros {
   padding: 40px 0px;
@@ -203,13 +212,28 @@ header {
   flex-wrap: wrap;
   margin-top: 100px;
 }
-.container-best {
+.container-best1 {
   width: 445px;
   height: 220px;
   background-color: #fafafa;
   display: flex;
   position: relative;
 }
+
+.container-best2 {
+    width: 445px;
+    height: 220px;
+    background-color: #fafafa;
+    display: flex;
+    position: relative;
+  }
+  .container-best3 {
+    width: 445px;
+    height: 220px;
+    background-color: #fafafa;
+    display: flex;
+    position: relative;
+  }
 .article-best {
   width: 403px;
   height: 237px;
@@ -223,6 +247,10 @@ header {
   height: 70px;
   margin-bottom: 10px;
   margin-top: 10px;
+}
+.img-best:hover{
+    transform: scale(2);
+    transition-duration: 3s;
 }
 .name-best {
   font-weight: 700;
@@ -357,7 +385,7 @@ header {
     text-align: right;
     font-size: 12.5px;
   }
-  @media (max-width: 468px) {
+  @media (max-width: 480px) {
     header {
       justify-content: space-between;
     }
@@ -369,4 +397,175 @@ header {
     .mobile-menu {
       display: block;
     }
+    .container-padel {
+        width: 400px;
+        height: 840.53px;
+        margin-top: 20px;
+      }
+      .img-padel {
+        width: 100vw;
+        padding: 40px;
+      }
+      .texto-padel {
+        width: 400px;
+        height: 399px;
+        gap: 28px;
+      }
+      .h1-padel {
+        width: 400px;
+        height: 228px;
+        color: rgba(35, 44, 80, 1);
+      }
+      .h3-padel {
+        width: 400px;
+      }      
+    .container-pros {
+        background-color:  rgba(60, 221, 243, 1);
+        width: 480px;
+        height: 306px;
+        padding: 40px 20px;
+        gap: 50px;
+        align-items: left;
+    }
+    .h2-pros {
+        width: 440px;
+        color: rgba(255, 255, 255, 1);
+      }
+      .p-pros {
+        width: 440px;
+        color: rgba(255, 255, 255, 1);
+        visibility: hidden;
+      }
+      .p-pros::before {
+        width: 440px;
+        color: rgba(255, 255, 255, 1);
+        visibility: visible;
+        content: "Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams";
+      }
+      .container-articles {
+        width: 446px;
+        height: 682px;
+        top: 1415px;
+        left: 34px;
+        gap:20pax;
+        background-color: white;
+      }
+      .title-article{
+        width: 446px;
+        height: 43px;
+        gap: 8px;
+        background-color: rgba(139, 72, 191, 0.3);
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px
+      }
+      .nbr-article {
+        background-color: rgba(139, 72, 191, 1);
+      }
+      .h4-article {
+        width: 300px;
+        height: 43px;
+        padding: 10px;
+        gap: 10px;
+      }
+      .p-article {
+        width: 408px;
+        height: 130px;
+        margin: 0px;
+        margin-top: 20px;
+      }
+      .article {
+        width: 446px;
+        height: 214px;
+        gap: 21px;
+      }      
+      .h4-best {
+        font-weight: 700;
+        font-size: 39.21px;
+        line-height: 61.41px;
+        text-align: center;
+        color: #242e53;
+        margin: 50px;
+      }
+      .section-best {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+      }
+      .container-best1 {
+        width: 445px;
+        height: 220px;
+        background-color: #fafafa;
+        display: none;
+        position: relative;
+      }
+      .container-best2 {
+        width: 445px;
+        height: 220px;
+        background-color: #fafafa;
+        display: flex;
+        position: relative;
+      }
+      .container-best3 {
+        width: 445px;
+        height: 220px;
+        background-color: #fafafa;
+        display: none;
+        position: relative;
+      }
+      .article-best {
+        width: 403px;
+        height: 237px;
+        text-align: center;
+        position: absolute;
+        bottom: 10px;
+        margin: 15px;
+      }
+      .img-best {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .name-best {
+        font-weight: 700;
+        font-size: 16.07px;
+        line-height: 25.17px;
+        color: #3f4868;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .p-best {
+        width: 403px;
+        height: 100px;
+        font-weight: 500;
+        line-height: 25.06px;
+        color: #b9b9c1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .container-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 200px;
+      }
+      .button-more {
+        width: 134px;
+        height: 44px;
+        padding: 15px;
+        border-radius: 50px;
+        border: none;
+        gap: 10px;
+        background-color: rgba(139, 72, 191, 1);
+        ;
+        color: #ffffff;
+        margin-top: 50px;
+        position: absolute;
+        top: 50px;
+      }
+      .i-more {
+        display: none;
+      }      
   }
