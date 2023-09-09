@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 :root {
   --main-color: #8b48bf;
   --main-dark-color: #1e1e26;
@@ -325,6 +325,9 @@ a:hover {
   border-radius: 50px;
   text-align: center;
   font-size: 13.18px;
+  box-shadow: -2px 9px 5px -4px rgba(64, 62, 62, 0.75);
+  -webkit-box-shadow: -2px 9px 5px -4px rgba(64, 62, 62, 0.75);
+  -moz-box-shadow: -2px 9px 5px -4px rgba(64, 62, 62, 0.75);
 }
 #email::placeholder {
   /* Agrega espacio alrededor del texto del placeholder */
@@ -539,9 +542,12 @@ a:hover {
     align-items: center;
     text-align: center;
   }
-  .button-goit{
+  .button-goit {
     background-color: var(--main-dark-fonts-color);
     color: var(--main-lightgrey-color);
+    box-shadow: -2px 9px 5px -4px rgba(64, 62, 62, 0.75);
+    -webkit-box-shadow: -2px 9px 5px -4px rgba(64, 62, 62, 0.75);
+    -moz-box-shadow: -2px 9px 5px -4px rgba(64, 62, 62, 0.75);
   }
   .footer-section {
     display: flex;
@@ -565,10 +571,10 @@ a:hover {
     letter-spacing: 55px;
     margin-top: 7px;
   }
-  .footer-menu{
+  .footer-menu {
     margin-left: 15px;
   }
-  .footer-logo{
+  .footer-logo {
     margin-top: 15px;
   }
   .end-copyright {
