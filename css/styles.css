@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 :root {
   --main-color: #8b48bf;
   --main-dark-color: #1e1e26;
@@ -12,15 +18,9 @@
   --main-darkblue-color: #3f4868;
   --main-cian-color: #3cddf3;
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 body {
   font-family: "Be Vietnam Pro", sans-serif;
 }
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
 header {
   padding: 2rem 3rem;
   display: flex;
