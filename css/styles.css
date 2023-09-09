@@ -326,6 +326,10 @@ a:hover {
   text-align: center;
   font-size: 13.18px;
 }
+#email::placeholder {
+  /* Agrega espacio alrededor del texto del placeholder */
+  padding: 20px; /* Puedes ajustar este valor según tus preferencias */
+}
 .footer-section {
   display: flex;
   flex-direction: row;
@@ -534,6 +538,10 @@ a:hover {
     margin-top: 120px;
     align-items: center;
     text-align: center;
+  }
+  .button-goit{
+    background-color: var(--main-dark-fonts-color);
+    color: var(--main-lightgrey-color);
   }
   .footer-section {
     display: flex;
